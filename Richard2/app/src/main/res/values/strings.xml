@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Pizza App</string>
+
+    <!--Login Screen-->
+    <string name="name_entry">Name</string>
+    <string name="phone_entry">Phone</string>
+    <string name="address_entry">Address</string>
+    <string name="next_button">Next</string>
+
+    <!--Specials Screen-->
+    <string name="specials">Today\'s Special</string>
+    <string name="special_description">1 Large Tuscany Pizza: Pepperoni, Tomatoes, Chicken, Basil for $14.99</string>
+    <string name="or_text_main_menu">- OR -</string>
+    <string name="design_main_menu">Design Your Own Pizza!</string>
+
+    <!--Order Screen-->
+    <string name="sizespinner">Choose Size</string>
+    <string name="doughspinner">Choose Dough</string>
+    <string name="saucespinner">Choose Sauce</string>
+    <string name="topping">Choose Toppings</string>
+
+    <!--<string name="size_pizza">Choose Size</string>-->
+    <!--<string name="small_pizza">Small 11\"</string>-->
+    <!--<string name="medium_pizza">Medium 12\"</string>-->
+    <!--<string name="large_pizza">Large 14\"</string>-->
+
+    <string-array name="size_list">
+        <item>Choose Size</item>
+        <item>Small 11\"</item>
+        <item>Medium 12\"</item>
+        <item>Large 14\"</item>
+    </string-array>
+
+    <!--<string name="dough">Choose dough</string>-->
+    <!--<string name="white_dough">White</string>-->
+    <!--<string name="wholewheat_dough">Whole Wheat</string>-->
+
+    <string-array name="dough_list">
+        <item>Choose Dough</item>
+        <item>White</item>
+        <item>Whole Wheat</item>
+        <item>Gluten Free</item>
+    </string-array>
+
+    <!--<string name="sauce">Choose Sauce</string>-->
+    <!--<string name="tomato_sauce">Tomato Sauce</string>-->
+    <!--<string name="bbq_sauce">BBQ Sauce</string>-->
+    <!--<string name="no_sauce">No Sauce</string>-->
+
+    <string-array name="sauce_list">
+        <item>Choose Sauce</item>
+        <item>Tomato Sauce</item>
+        <item>BBQ Sauce</item>
+        <item>No Sauce</item>
+    </string-array>
+
+    <string name="pepperoni_topping">Pepperoni</string>
+    <string name="cheese_topping">Extra Cheese</string>
+    <string name="chicken_topping">Chicken</string>
+    <string name="bacon_topping">Bacon</string>
+    <string name="pineapple_topping">Pineapple</string>
+    <string name="mushroom_topping">Mushrooms</string>
+    <string name="greenpepper_topping">Green Pepper</string>
+    <string name="sausage_topping">Hot Sausage</string>
+    <string name="groundbeef_topping">Ground Beef</string>
+    <string name="redonion_topping">Red Onion</string>
+    <string name="blackolives_topping">Kalamata Olives</string>
+    <string name="anchovies_topping">Anchovies</string>
+
+</resources>
