@@ -14,15 +14,6 @@
     <string name="design_main_menu">Design Your Own Pizza!</string>
 
     <!--Order Screen-->
-    <string name="sizespinner">Choose Size</string>
-    <string name="doughspinner">Choose Dough</string>
-    <string name="saucespinner">Choose Sauce</string>
-    <string name="topping">Choose Toppings</string>
-
-    <!--<string name="size_pizza">Choose Size</string>-->
-    <!--<string name="small_pizza">Small 11\"</string>-->
-    <!--<string name="medium_pizza">Medium 12\"</string>-->
-    <!--<string name="large_pizza">Large 14\"</string>-->
 
     <string-array name="size_list">
         <item>Choose Size</item>
@@ -31,21 +22,12 @@
         <item>Large 14\"</item>
     </string-array>
 
-    <!--<string name="dough">Choose dough</string>-->
-    <!--<string name="white_dough">White</string>-->
-    <!--<string name="wholewheat_dough">Whole Wheat</string>-->
-
     <string-array name="dough_list">
         <item>Choose Dough</item>
         <item>White</item>
         <item>Whole Wheat</item>
         <item>Gluten Free</item>
     </string-array>
-
-    <!--<string name="sauce">Choose Sauce</string>-->
-    <!--<string name="tomato_sauce">Tomato Sauce</string>-->
-    <!--<string name="bbq_sauce">BBQ Sauce</string>-->
-    <!--<string name="no_sauce">No Sauce</string>-->
 
     <string-array name="sauce_list">
         <item>Choose Sauce</item>
@@ -54,6 +36,18 @@
         <item>No Sauce</item>
     </string-array>
 
+    <string name="size_pizza">Size</string>
+    <string name="dough_pizza">Dough</string>
+    <string name="sauce_pizza">Sauce</string>
+
+    <string name="largepizza">Large 14\"</string>
+    <string name="whitedough">White Dough</string>
+    <string name="tomatosauce">Tomato Sauce</string>
+
+
+
+    <string name="topping">Choose Topping</string>
+    <string name="topping_text">Toppings</string>
     <string name="pepperoni_topping">Pepperoni</string>
     <string name="cheese_topping">Extra Cheese</string>
     <string name="chicken_topping">Chicken</string>
@@ -64,7 +58,13 @@
     <string name="sausage_topping">Hot Sausage</string>
     <string name="groundbeef_topping">Ground Beef</string>
     <string name="redonion_topping">Red Onion</string>
-    <string name="blackolives_topping">Kalamata Olives</string>
-    <string name="anchovies_topping">Anchovies</string>
+    <string name="basil_topping">Basil</string>
+    <string name="tomatoes_topping">Tomatoes</string>
+
+    <string name="comments_text">Comments or Special Requests</string>
+    <string name="nocomment">No comment</string>
+
+    <!--Details Screen-->
+    <string name="your_order_text">Your Order</string>
 
 </resources>
