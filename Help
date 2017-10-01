@@ -1,0 +1,50 @@
+You have reached the Help Center for PizzaApp
+
+--------------------------------------------------------------------------------------
+Menu Action Bar
+
+Pizza Hut icon takes you to "https://www.pizzahut.ca/"
+Richard links you to your phone's Calculator
+Help links you to "Here"
+
+--------------------------------------------------------------------------------------
+Login Screen
+
+Name Field cannot be Empty
+Phone Field must be 10 digits
+Address cannot be Empty
+
+--------------------------------------------------------------------------------------
+Specials Screen
+
+Two Options
+  Today's Special links directly to Details Screen with auto populated order information
+    >Image Button only links
+  Design your own pizza links you to Orders Screen to customize your pizza
+    >Both Button and Image links to Order Screen
+    
+--------------------------------------------------------------------------------------
+Orders Screen
+
+Must choose Size
+Must choose Dough
+Must choose Sauce
+Toppings are optional
+Comments or Special Requests are optional
+
+--------------------------------------------------------------------------------------
+Details Screen
+
+Order information, subtotal, tax, total price, name, phone, address are located here
+Credit Card Number must be 16 digits
+
+--------------------------------------------------------------------------------------
+Confirmation Screen
+
+Order Time is the current time
+Guaranteed Delivery time is 30 minutes + current time
+Order number is a randomized 8 digit number
+Time Left is a countdown from 30 minutes
+
+
+
