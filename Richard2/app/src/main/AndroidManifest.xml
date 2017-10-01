@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Specials_Screen" />
         <activity android:name=".Order_Screen" />
-        <activity android:name=".Details_Screen"></activity>
+        <activity android:name=".Details_Screen" />
+        <activity android:name=".Confirmation_Screen"></activity>
     </application>
 
 </manifest>

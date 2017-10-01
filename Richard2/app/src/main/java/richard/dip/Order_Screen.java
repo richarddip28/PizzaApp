@@ -23,6 +23,7 @@ public class Order_Screen extends AppCompatActivity {
     Spinner size_spinner, dough_spinner, sauce_spinner;
     CheckBox cb1,cb2,cb3,cb4,cb5,cb6,cb7,cb8,cb9,cb10,cb11,cb12;
     EditText messages;
+    Boolean spinner_size, spinner_dough, spinner_sauce;
 
     public void getToppings(){
 
@@ -81,8 +82,34 @@ public class Order_Screen extends AppCompatActivity {
         dough_pizza = dough_spinner.getSelectedItem().toString();
         sauce_pizza = sauce_spinner.getSelectedItem().toString();
 
+        if(size_pizza.matches(getString(R.string.size_z))) {
+            Toast.makeText(this, getString(R.string.size_error), Toast.LENGTH_LONG).show();
+            spinner_size = false;
+        }
+        else
+            spinner_size = true;
+
+        if(dough_pizza.matches(getString(R.string.dough_z))) {
+            Toast.makeText(this, getString(R.string.dough_error), Toast.LENGTH_LONG).show();
+            spinner_dough = false;
+        }
+        else
+            spinner_dough = true;
+
+        if(sauce_pizza.matches(getString(R.string.sauce_z))) {
+            Toast.makeText(this, getString(R.string.sauce_error), Toast.LENGTH_LONG).show();
+            spinner_sauce = false;
+        }
+        else
+            spinner_sauce = true;
+
         messages = (EditText) findViewById(R.id.messages_text);
-        String commentToSend = messages.getText().toString();
+        String commentToSend;
+
+        if(messages.getText().toString().matches(""))
+            commentToSend = getString(R.string.nocomment);
+        else
+            commentToSend = messages.getText().toString();
 
         getToppings();
 
@@ -105,7 +132,8 @@ public class Order_Screen extends AppCompatActivity {
     public void toDetailsScreen(View v){
 
         getInfo();
-        startActivity(intent);
+        if(spinner_size && spinner_dough && spinner_sauce)
+            startActivity(intent);
 
     }
     @Override

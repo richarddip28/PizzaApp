@@ -56,19 +56,20 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="270dp"
-        android:orientation="vertical"
         android:id="@+id/linearLayout"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginStart="8dp"
+        android:layout_width="0dp"
+        android:layout_height="240dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="8dp"
-        tools:layout_constraintLeft_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
 
         <TextView
             android:id="@+id/specials_title"
@@ -82,20 +83,20 @@
             tools:layout_editor_absoluteY="281dp" />
 
         <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
             android:onClick="toDetailsScreen"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/pizza1" />
 
         <TextView
             android:id="@+id/specials_description"
-            android:textColor="#000000"
-            android:textSize="12sp"
-            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/special_description" />
+            android:text="@string/special_description"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

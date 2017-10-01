@@ -38,6 +38,7 @@
             android:id="@+id/imageView"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            android:layout_marginTop="30dp"
             android:layout_gravity="center"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/pizza_logo1" />
@@ -50,7 +51,7 @@
             android:layout_marginTop="80dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/name_entry" />
+            android:hint="@string/name_entry" />
 
         <EditText
             android:id="@+id/phone_entry"
@@ -59,7 +60,7 @@
             android:layout_gravity="center"
             android:ems="10"
             android:inputType="phone"
-            android:text="@string/phone_entry" />
+            android:hint="@string/phone_entry" />
 
         <EditText
             android:id="@+id/address_entry"
@@ -68,7 +69,7 @@
             android:layout_gravity="center"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/address_entry" />
+            android:hint="@string/address_entry" />
 
     </LinearLayout>
 

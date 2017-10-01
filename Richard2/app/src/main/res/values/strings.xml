@@ -7,6 +7,10 @@
     <string name="address_entry">Address</string>
     <string name="next_button">Next</string>
 
+    <string name="name_error">You did not enter a Name</string>
+    <string name="phone_error">Please Enter a 10 Digit Phone Number</string>
+    <string name="address_error">You did not enter an Address</string>
+
     <!--Specials Screen-->
     <string name="specials">Today\'s Special</string>
     <string name="special_description">1 Large Tuscany Pizza: Pepperoni, Tomatoes, Chicken, Basil for $14.99</string>
@@ -17,9 +21,9 @@
 
     <string-array name="size_list">
         <item>Choose Size</item>
-        <item>Small 11\"</item>
-        <item>Medium 12\"</item>
-        <item>Large 14\"</item>
+        <item>Small 11\" $9.99</item>
+        <item>Medium 12\" $11.99</item>
+        <item>Large 14\" $13.99</item>
     </string-array>
 
     <string-array name="dough_list">
@@ -36,6 +40,19 @@
         <item>No Sauce</item>
     </string-array>
 
+    <string name="size_z">Choose Size</string>
+    <string name="dough_z">Choose Dough</string>
+    <string name="sauce_z">Choose Sauce</string>
+
+    <string name="sml">Small 11\" $9.99</string>
+    <string name="med">Medium 12\" $11.99</string>
+
+    <string name="size_error">Please Select Size</string>
+    <string name="dough_error">Please Select Dough</string>
+    <string name="sauce_error">Please Select Sauce</string>
+
+    <string name="card_error">Please Enter a 16 digit Credit Card Number</string>
+
     <string name="size_pizza">Size</string>
     <string name="dough_pizza">Dough</string>
     <string name="sauce_pizza">Sauce</string>
@@ -45,8 +62,8 @@
     <string name="tomatosauce">Tomato Sauce</string>
 
 
-
-    <string name="topping">Choose Topping</string>
+    <string name="topping">Choose Toppings</string>
+    <string name="topping_price">\u0020\u0020\u0020$1.29 each</string>
     <string name="topping_text">Toppings</string>
     <string name="pepperoni_topping">Pepperoni</string>
     <string name="cheese_topping">Extra Cheese</string>
@@ -63,8 +80,21 @@
 
     <string name="comments_text">Comments or Special Requests</string>
     <string name="nocomment">No comment</string>
+    <string name="subtotal">Subtotal</string>
 
     <!--Details Screen-->
     <string name="your_order_text">Your Order</string>
+    <string name="finalize_button">Confirmation</string>
+    <string name="credit_card_number">Credit Card Number</string>
+    <string name="credit_request">Enter Credit Card Number</string>
+    <string name="taxes">HST 13%: </string>
+    <string name="total_bill">Total</string>
+    <string name="confirmation">Click to Confirm</string>
+
+
+    <string name="order_placed">Order Placed!</string>
+    <string name="ordertime">Order Time</string>
+    <string name="guarantee">Guaranteed Delivery Time\u0020\u0020\u0020\u0020\u0020\u0020</string>
+    <string name="timeleft">Time Left</string>
 
 </resources>
