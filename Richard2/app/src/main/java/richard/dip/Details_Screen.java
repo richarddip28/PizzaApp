@@ -108,18 +108,21 @@ public class Details_Screen extends AppCompatActivity {
 
 
 
-
-        size.setText(size_pizza);
-        dough.setText(dough_pizza);
-        sauce.setText(sauce_pizza);
-        topping_list.setText(Arrays.toString(list));
-        commentBox.setText(comments);
-        name.setText(prefs.getString("name_final", "no id"));
-        phone.setText(prefs.getString("phone_final", "no id"));
-        address.setText(prefs.getString("address_final", "no id"));
-        subtotal.setText(String.valueOf("$"+df.format(price)));
-        taxText.setText(String.valueOf("$"+df.format(taxes)));
-        totalText.setText(String.valueOf("$"+df.format(totalBill)));
+        try {
+            size.setText(size_pizza);
+            dough.setText(dough_pizza);
+            sauce.setText(sauce_pizza);
+            topping_list.setText(Arrays.toString(list));
+            commentBox.setText(comments);
+            name.setText(prefs.getString("name_final", "no id"));
+            phone.setText(prefs.getString("phone_final", "no id"));
+            address.setText(prefs.getString("address_final", "no id"));
+            subtotal.setText(String.valueOf("$" + df.format(price)));
+            taxText.setText(String.valueOf("$" + df.format(taxes)));
+            totalText.setText(String.valueOf("$" + df.format(totalBill)));
+        }catch (Exception e){
+            Toast.makeText(this,e.toString(),Toast.LENGTH_SHORT).show();
+        }
 
     }
 
@@ -135,12 +138,12 @@ public class Details_Screen extends AppCompatActivity {
 
         switch(item.getItemId()){
             case R.id.help_click:
-                uri = Uri.parse("https://github.com/richarddip28");
+                uri = Uri.parse("https://github.com/richarddip28/PizzaApp/blob/master/Help");
                 launch = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(launch);
                 return true;
             case R.id.dominos_click:
-                uri = Uri.parse("https://www.dominos.ca/");
+                uri = Uri.parse("https://www.pizzahut.ca/");
                 launch = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(launch);
                 return true;

@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class Specials_Screen extends AppCompatActivity {
 
@@ -29,15 +30,18 @@ public class Specials_Screen extends AppCompatActivity {
         intent = new Intent(this, Details_Screen.class);
         price = 14.99;
 
-
-        intent.putExtra("sizeofpizza",getString(R.string.largepizza));
-        intent.putExtra("doughofpizza",getString(R.string.whitedough));
-        intent.putExtra("sauceofpizza",getString(R.string.tomatosauce));
-        String[] list = {getString(R.string.pepperoni_topping), getString(R.string.chicken_topping),getString(R.string.tomatoes_topping), getString(R.string.basil_topping)};
-        intent.putExtra("list",list);
-        intent.putExtra("price", price);
-        intent.putExtra("comments",getString(R.string.nocomment));
-        startActivity(intent);
+        try {
+            intent.putExtra("sizeofpizza", getString(R.string.largepizza));
+            intent.putExtra("doughofpizza", getString(R.string.whitedough));
+            intent.putExtra("sauceofpizza", getString(R.string.tomatosauce));
+            String[] list = {getString(R.string.pepperoni_topping), getString(R.string.chicken_topping), getString(R.string.tomatoes_topping), getString(R.string.basil_topping)};
+            intent.putExtra("list", list);
+            intent.putExtra("price", price);
+            intent.putExtra("comments", getString(R.string.nocomment));
+            startActivity(intent);
+        }catch (Exception e){
+            Toast.makeText(this,e.toString(),Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override
@@ -58,12 +62,12 @@ public class Specials_Screen extends AppCompatActivity {
 
         switch(item.getItemId()){
             case R.id.help_click:
-                uri = Uri.parse("https://github.com/richarddip28");
+                uri = Uri.parse("https://github.com/richarddip28/PizzaApp/blob/master/Help");
                 launch = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(launch);
                 return true;
             case R.id.dominos_click:
-                uri = Uri.parse("https://www.dominos.ca/");
+                uri = Uri.parse("https://www.pizzahut.ca/");
                 launch = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(launch);
                 return true;

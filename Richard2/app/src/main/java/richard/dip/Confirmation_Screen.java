@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -35,19 +36,22 @@ public class Confirmation_Screen extends AppCompatActivity {
 
     public void setTime(){
 
+        try {
+            currentTime = (TextView) findViewById(R.id.current_time);
+            guarenteedTime = (TextView) findViewById(R.id.guarenteedtime);
+            countdown = (TextView) findViewById(R.id.countdown);
+            df = new SimpleDateFormat("hh:mm aa");
 
-        currentTime = (TextView) findViewById(R.id.current_time);
-        guarenteedTime = (TextView) findViewById(R.id.guarenteedtime);
-        countdown = (TextView) findViewById(R.id.countdown);
-        df = new SimpleDateFormat("hh:mm aa");
-
-        now = Calendar.getInstance();
-        then = Calendar.getInstance();
-        then.add(Calendar.MINUTE, 30);
+            now = Calendar.getInstance();
+            then = Calendar.getInstance();
+            then.add(Calendar.MINUTE, 30);
 
 
-        currentTime.setText(df.format(now.getTime()));
-        guarenteedTime.setText(df.format(then.getTime()));
+            currentTime.setText(df.format(now.getTime()));
+            guarenteedTime.setText(df.format(then.getTime()));
+        }catch (Exception e){
+            Toast.makeText(this,e.toString(),Toast.LENGTH_SHORT).show();
+        }
 
         new CountDownTimer(1800000, 1000) { // adjust the milli seconds here
 
@@ -106,12 +110,12 @@ public class Confirmation_Screen extends AppCompatActivity {
 
         switch(item.getItemId()){
             case R.id.help_click:
-                uri = Uri.parse("https://github.com/richarddip28");
+                uri = Uri.parse("https://github.com/richarddip28/PizzaApp/blob/master/Help");
                 launch = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(launch);
                 return true;
             case R.id.dominos_click:
-                uri = Uri.parse("https://www.dominos.ca/");
+                uri = Uri.parse("https://www.pizzahut.ca/");
                 launch = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(launch);
                 return true;

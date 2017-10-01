@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.telephony.PhoneNumberFormattingTextWatcher;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -25,8 +26,7 @@ public class Richard extends AppCompatActivity {
     Boolean nameOk, phoneOk, addressOk;
     Uri uri;
 
-    public void nextButton(View v){
-
+    public void init(){
 
         intent = new Intent(this, Specials_Screen.class);
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -35,6 +35,12 @@ public class Richard extends AppCompatActivity {
         name = (EditText) findViewById(R.id.name_entry);
         phone = (EditText) findViewById(R.id.phone_entry);
         address = (EditText) findViewById(R.id.address_entry);
+
+
+    }
+    public void nextButton(View v){
+
+
 
         try {
             if (name.getText().toString().matches("")) {
@@ -73,6 +79,7 @@ public class Richard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_richard);
+        init();
     }//end onCreate
 
     @Override
@@ -87,12 +94,12 @@ public class Richard extends AppCompatActivity {
 
         switch(item.getItemId()){
             case R.id.help_click:
-                uri = Uri.parse("https://github.com/richarddip28");
+                uri = Uri.parse("https://github.com/richarddip28/PizzaApp/blob/master/Help");
                 launch = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(launch);
                 return true;
             case R.id.dominos_click:
-                uri = Uri.parse("https://www.dominos.ca/");
+                uri = Uri.parse("https://www.pizzahut.ca/");
                 launch = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(launch);
                 return true;

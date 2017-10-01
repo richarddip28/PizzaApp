@@ -46,31 +46,34 @@ public class Order_Screen extends AppCompatActivity {
         cb11 = (CheckBox) findViewById(R.id.cb11);
         cb12 = (CheckBox) findViewById(R.id.cb12);
 
-        if(cb1.isChecked()) {
-            list.add(getString(R.string.pepperoni_topping));
+        try {
+            if (cb1.isChecked())
+                list.add(getString(R.string.pepperoni_topping));
+            if (cb2.isChecked())
+                list.add(getString(R.string.cheese_topping));
+            if (cb3.isChecked())
+                list.add(getString(R.string.chicken_topping));
+            if (cb4.isChecked())
+                list.add(getString(R.string.bacon_topping));
+            if (cb5.isChecked())
+                list.add(getString(R.string.pineapple_topping));
+            if (cb6.isChecked())
+                list.add(getString(R.string.mushroom_topping));
+            if (cb7.isChecked())
+                list.add(getString(R.string.greenpepper_topping));
+            if (cb8.isChecked())
+                list.add(getString(R.string.sausage_topping));
+            if (cb9.isChecked())
+                list.add(getString(R.string.groundbeef_topping));
+            if (cb10.isChecked())
+                list.add(getString(R.string.redonion_topping));
+            if (cb11.isChecked())
+                list.add(getString(R.string.tomatoes_topping));
+            if (cb12.isChecked())
+                list.add(getString(R.string.basil_topping));
+        }catch (Exception e){
+            Toast.makeText(this,e.toString(),Toast.LENGTH_SHORT).show();
         }
-        if(cb2.isChecked())
-            list.add(getString(R.string.cheese_topping));
-        if(cb3.isChecked())
-            list.add(getString(R.string.chicken_topping));
-        if(cb4.isChecked())
-            list.add(getString(R.string.bacon_topping));
-        if(cb5.isChecked())
-            list.add(getString(R.string.pineapple_topping));
-        if(cb6.isChecked())
-            list.add(getString(R.string.mushroom_topping));
-        if(cb7.isChecked())
-            list.add(getString(R.string.greenpepper_topping));
-        if(cb8.isChecked())
-            list.add(getString(R.string.sausage_topping));
-        if(cb9.isChecked())
-            list.add(getString(R.string.groundbeef_topping));
-        if(cb10.isChecked())
-            list.add(getString(R.string.redonion_topping));
-        if(cb11.isChecked())
-            list.add(getString(R.string.tomatoes_topping));
-        if(cb12.isChecked())
-            list.add(getString(R.string.basil_topping));
 
 
     }//end getToppings()
@@ -79,30 +82,34 @@ public class Order_Screen extends AppCompatActivity {
 
         intent=new Intent(this, Details_Screen.class);
 
-        size_spinner = (Spinner)findViewById(R.id.spinner_size);
-        dough_spinner = (Spinner)findViewById(R.id.spinner_dough);
-        sauce_spinner = (Spinner)findViewById(R.id.spinner_sauce);
+        try {
+            size_spinner = (Spinner) findViewById(R.id.spinner_size);
+            dough_spinner = (Spinner) findViewById(R.id.spinner_dough);
+            sauce_spinner = (Spinner) findViewById(R.id.spinner_sauce);
 
-        size_pizza = size_spinner.getSelectedItem().toString();
-        dough_pizza = dough_spinner.getSelectedItem().toString();
-        sauce_pizza = sauce_spinner.getSelectedItem().toString();
+            size_pizza = size_spinner.getSelectedItem().toString();
+            dough_pizza = dough_spinner.getSelectedItem().toString();
+            sauce_pizza = sauce_spinner.getSelectedItem().toString();
+        }catch (Exception e){
+            Toast.makeText(this,e.toString(),Toast.LENGTH_SHORT).show();
+        }
 
         if(size_pizza.matches(getString(R.string.size_z))) {
-            Toast.makeText(this, getString(R.string.size_error), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.size_error), Toast.LENGTH_SHORT).show();
             spinner_size = false;
         }
         else
             spinner_size = true;
 
         if(dough_pizza.matches(getString(R.string.dough_z))) {
-            Toast.makeText(this, getString(R.string.dough_error), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.dough_error), Toast.LENGTH_SHORT).show();
             spinner_dough = false;
         }
         else
             spinner_dough = true;
 
         if(sauce_pizza.matches(getString(R.string.sauce_z))) {
-            Toast.makeText(this, getString(R.string.sauce_error), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.sauce_error), Toast.LENGTH_SHORT).show();
             spinner_sauce = false;
         }
         else
@@ -159,12 +166,12 @@ public class Order_Screen extends AppCompatActivity {
 
         switch(item.getItemId()){
             case R.id.help_click:
-                uri = Uri.parse("https://github.com/richarddip28");
+                uri = Uri.parse("https://github.com/richarddip28/PizzaApp/blob/master/Help");
                 launch = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(launch);
                 return true;
             case R.id.dominos_click:
-                uri = Uri.parse("https://www.dominos.ca/");
+                uri = Uri.parse("https://www.pizzahut.ca/");
                 launch = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(launch);
                 return true;

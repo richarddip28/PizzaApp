@@ -16,10 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Specials_Screen" />
-        <activity android:name=".Order_Screen" />
-        <activity android:name=".Details_Screen" />
-        <activity android:name=".Confirmation_Screen"></activity>
+        <activity android:name=".Specials_Screen" android:parentActivityName=".Richard"/>
+        <activity android:name=".Order_Screen" android:parentActivityName=".Richard"/>
+        <activity android:name=".Details_Screen" android:parentActivityName=".Richard"/>
+        <activity android:name=".Confirmation_Screen" android:parentActivityName=".Richard"></activity>
     </application>
 
 </manifest>
