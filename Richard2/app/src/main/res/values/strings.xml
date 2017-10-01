@@ -1,7 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Pizza App</string>
 
-    <!--Login Screen-->
+    <string name="app_name">Domino\'s</string>
     <string name="name_entry">Name</string>
     <string name="phone_entry">Phone</string>
     <string name="address_entry">Address</string>
@@ -91,10 +91,10 @@
     <string name="total_bill">Total</string>
     <string name="confirmation">Click to Confirm</string>
 
-
+    <!--Confirmation Screen-->
     <string name="order_placed">Order Placed!</string>
     <string name="ordertime">Order Time</string>
+    <string name="order_num">Order Number</string>
     <string name="guarantee">Guaranteed Delivery Time\u0020\u0020\u0020\u0020\u0020\u0020</string>
     <string name="timeleft">Time Left</string>
-
 </resources>

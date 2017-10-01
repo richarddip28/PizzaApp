@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">Pizza App</string>
+
+    <!--Login Screen-->
+    <string name="name_entry">Nom</string>
+    <string name="phone_entry">Téléphone</string>
+    <string name="address_entry">Adresse</string>
+    <string name="next_button">Suivant</string>
+
+    <string name="name_error">Vous n\'avez pas saisi de nom</string>
+    <string name="phone_error">Entrez un numéro de téléphone à 10 chiffres</string>
+    <string name="address_error">Vous n\'avez pas entré une adresse</string>
+
+    <!--Specials Screen-->
+    <string name="specials">Le plat du jour</string>
+    <string name="special_description">1 grande pizza toscane: poivrons, tomates, poulet, basilic pour 14,99 $</string>
+    <string name="or_text_main_menu">- OU -</string>
+    <string name="design_main_menu">Concevez votre propre pizza!</string>
+
+    <!--Order Screen-->
+
+    <string-array name="size_list">
+        <item>Choisissez la taille</item>
+        <item>Petit 11\" $9.99</item>
+        <item>Moyen 12\" $11.99</item>
+        <item>Grand 14\" $13.99</item>
+    </string-array>
+
+    <string-array name="dough_list">
+        <item>Choisissez la pâte</item>
+        <item>Blanc</item>
+        <item>Blé complet</item>
+        <item>Sans gluten</item>
+    </string-array>
+
+    <string-array name="sauce_list">
+        <item>Choisissez Sauce</item>
+        <item>Sauce tomate</item>
+        <item>Sauce barbecue</item>
+        <item>Pas de sauce</item>
+    </string-array>
+
+    <string name="size_z">Choisissez la taille</string>
+    <string name="dough_z">Choisissez la pâte</string>
+    <string name="sauce_z">Choisissez Sauce</string>
+
+    <string name="sml">Petit 11\" $9.99</string>
+    <string name="med">Moyen 12\" $11.99</string>
+
+    <string name="size_error">Sélectionnez Taille</string>
+    <string name="dough_error">Sélectionnez la pâte</string>
+    <string name="sauce_error">Sélectionnez sauce</string>
+
+    <string name="card_error">Entrez un numéro de carte de crédit de 16 chiffres</string>
+
+    <string name="size_pizza">Taille</string>
+    <string name="dough_pizza">Pâte</string>
+    <string name="sauce_pizza">Sauce</string>
+
+    <string name="largepizza">Grand 14\"</string>
+    <string name="whitedough">Pâte blanche</string>
+    <string name="tomatosauce">Sauce tomate</string>
+
+
+    <string name="topping">Choisissez Garnitures</string>
+    <string name="topping_price">\u0020\u0020\u0020$1.29 chaque</string>
+    <string name="topping_text">Garnitures</string>
+    <string name="pepperoni_topping">Pepperoni</string>
+    <string name="cheese_topping">Fromage extra</string>
+    <string name="chicken_topping">Poulet</string>
+    <string name="bacon_topping">Bacon</string>
+    <string name="pineapple_topping">Ananas</string>
+    <string name="mushroom_topping">Champignons</string>
+    <string name="greenpepper_topping">Poivre vert</string>
+    <string name="sausage_topping">Saucisse chaude</string>
+    <string name="groundbeef_topping">Le bœuf haché</string>
+    <string name="redonion_topping">Oignon rouge</string>
+    <string name="basil_topping">Basilic</string>
+    <string name="tomatoes_topping">Tomates</string>
+
+    <string name="comments_text">Commentaires ou demandes spéciales</string>
+    <string name="nocomment">Sans commentaires</string>
+    <string name="subtotal">Subtotal</string>
+
+    <!--Details Screen-->
+    <string name="your_order_text">Votre commande</string>
+    <string name="finalize_button">Confirmation</string>
+    <string name="credit_card_number">Numéro de Carte de Crédit</string>
+    <string name="credit_request">Entrez le numéro de la carte de crédit</string>
+    <string name="taxes">HST 13%: </string>
+    <string name="total_bill">Total</string>
+    <string name="confirmation">Cliquez pour confirmer</string>
+
+
+    <string name="order_placed">Commande passée!</string>
+    <string name="ordertime">Temps de commande</string>
+    <string name="order_num">Numéro de commande</string>
+    <string name="guarantee">Heure de livraison garantie\u0020\u0020\u0020\u0020\u0020\u0020</string>
+    <string name="timeleft">Temps restant</string>
+
+</resources>

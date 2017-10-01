@@ -2,9 +2,13 @@ package richard.dip;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -14,11 +18,12 @@ import org.w3c.dom.Text;
 
 public class Richard extends AppCompatActivity {
 
-    Intent intent;
+    Intent intent, launch;
     EditText name, address, phone;
     SharedPreferences prefs;
     SharedPreferences.Editor editor;
     Boolean nameOk, phoneOk, addressOk;
+    Uri uri;
 
     public void nextButton(View v){
 
@@ -68,7 +73,40 @@ public class Richard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_richard);
+    }//end onCreate
 
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+
+        switch(item.getItemId()){
+            case R.id.help_click:
+                uri = Uri.parse("https://github.com/richarddip28");
+                launch = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(launch);
+                return true;
+            case R.id.dominos_click:
+                uri = Uri.parse("https://www.dominos.ca/");
+                launch = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(launch);
+                return true;
+            case R.id.richard_click:
+                launch = new Intent();
+                launch.setClassName("com.android.calculator2",
+                        "com.android.calculator2.Calculator");
+                startActivity(launch);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+
+
+        }//end switch
+    }//end onOptionsItemSelected
+
 }
